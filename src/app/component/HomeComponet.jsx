@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import StateComponent from './StateComponent';
 
 class HomeComponet extends Component {
     render() {
@@ -9,9 +10,11 @@ class HomeComponet extends Component {
         };
 
         return (
-            <div style={style1}>
-                <h2>Home Component</h2>
-            </div>
+            <div>
+                <h2 style={style1}>Home Component</h2>
+                <StateComponent></StateComponent>
+                
+           </div>
         );
     }
 }

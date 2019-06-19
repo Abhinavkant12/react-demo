@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
 import NavbarComponent from './shared/NavbarComponent';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+// import { Route,Switch } from "react-router-dom";
 import HomeComponet from './component/HomeComponet';
+import CounterAssignment from './component/CounterComponent';
+import DataFlowAssignment from './component/DataFlowAssignment';
+import ControlledvsUncontrolled from './component/ControlledvsUncontrolled';
+import ListCompoent from './component/ListCompoent';
 
 class RootComponet extends Component {
     render() {
         return (
             <div>
-                <NavbarComponent />
-                <HomeComponet></HomeComponet>
-                {/*
-                 <Route exact path="/" component={HomeComponet} />
-                  <Route path="/about" component={About} />
-                <Route path="/topics" component={Topics} /> */}
+                {/* <NavbarComponent /> 
+                <DataFlowAssignment></DataFlowAssignment>
+                <CounterAssignment></CounterAssignment>*/}
+             
+                {/* <HomeComponet></HomeComponet> */}
+                {/* <ControlledvsUncontrolled></ControlledvsUncontrolled> */}
+                <ListCompoent></ListCompoent>
             </div>
         );
     }
