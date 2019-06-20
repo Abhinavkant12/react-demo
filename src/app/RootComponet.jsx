@@ -6,18 +6,29 @@ import CounterAssignment from './component/CounterComponent';
 import DataFlowAssignment from './component/DataFlowAssignment';
 import ControlledvsUncontrolled from './component/ControlledvsUncontrolled';
 import ListCompoent from './component/ListCompoent';
+import FormComponent from './component/FormComponent';
+import PropTypeRoot from './component/PropType';
+import Parent from './component/LifeCycleHooks';
+import AjaxComponent from './component/AjaxComponent';
+import ContextApiParent from './component/ContextApi';
 
 class RootComponet extends Component {
     render() {
         return (
             <div>
-                {/* <NavbarComponent /> 
-                <DataFlowAssignment></DataFlowAssignment>
+                 <NavbarComponent /> 
+                {/*<DataFlowAssignment></DataFlowAssignment>
                 <CounterAssignment></CounterAssignment>*/}
              
                 {/* <HomeComponet></HomeComponet> */}
                 {/* <ControlledvsUncontrolled></ControlledvsUncontrolled> */}
-                <ListCompoent></ListCompoent>
+                {/* <FormComponent></FormComponent>
+                 <ListCompoent></ListCompoent> */}
+                 {/* <PropTypeRoot></PropTypeRoot> */}
+                 {/* <Parent></Parent> */}
+                 {/*<AjaxComponent></AjaxComponent>*/}
+                 <ContextApiParent/>
+               
             </div>
         );
     }

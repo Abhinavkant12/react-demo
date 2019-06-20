@@ -29,10 +29,10 @@ const ListTable = (props) => {
     var Items = props.Items.map((item, index) => {
         console.log(item);
         return <tr key={index}>
-            <td>{item[Object.keyName]}</td>
-            <td>{item[1]}</td>
-            <td>{item[2]}</td>
-            <td>{item[3]}</td>
+            <td>{item.id}</td>
+            <td>{item.name}</td>
+            <td>{item.designation}</td>
+            <td>{item.salary}</td>
         </tr>
     })
     return (
