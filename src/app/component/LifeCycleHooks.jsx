@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Parent extends Component {
+class LifeCycleHooks extends Component {
     constructor(props) {
         super(props);
         console.log("Parent - Ctor");
@@ -95,4 +95,4 @@ class ChildComponent extends Component {
     }
 }
 
-export default Parent;
+export default LifeCycleHooks;

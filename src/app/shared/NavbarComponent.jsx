@@ -1,31 +1,36 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SwitchComponent from '../../routes';
 
 const NavbarComponent = () => {
     return (
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <Link class="navbar-brand" to="#">React</Link>
+        <React.Fragment>
+            <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
+                <Link className="navbar-brand" to="/">React</Link>
 
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <Link class="nav-link" to="#">Link 1</Link>
-                </li>
-                <li class="nav-item">
-                    <Link class="nav-link" to="#">Link 2</Link>
-                </li>
+                <ul className="navbar-nav">
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/">LifeCycleHooks</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/context-api">ContextApi</Link>
+                    </li>
 
-                <li class="nav-item dropdown">
-                    <Link class="nav-link dropdown-toggle" to="#" id="navbardrop" data-toggle="dropdown">
-                        Dropdown link
+                    <li className="nav-item dropdown">
+                        <Link className="nav-link dropdown-toggle" to="#" id="navbardrop" data-toggle="dropdown">
+                            Dropdown link
             </Link>
-                    <div class="dropdown-menu">
-                        <Link class="dropdown-item" to="#">Link 1</Link>
-                        <Link class="dropdown-item" to="#">Link 2</Link>
-                        <Link class="dropdown-item" to="#">Link 3</Link>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+                        <div className="dropdown-menu">
+                            <Link className="dropdown-item" to="#">Link 1</Link>
+                            <Link className="dropdown-item" to="#">Link 2</Link>
+                            <Link className="dropdown-item" to="#">Link 3</Link>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            {SwitchComponent}
+        </React.Fragment>
+
     );
 }
 
